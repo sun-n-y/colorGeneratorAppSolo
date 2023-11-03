@@ -1,5 +1,13 @@
+import { nanoid } from 'nanoid';
+import SingleColor from './SingleColor';
+
 const ColorList = ({ colorsArray }) => {
-  console.log(colorsArray);
-  return <div>ColorList</div>;
+  return (
+    <div className="color-list">
+      {colorsArray.map((color) => {
+        return <SingleColor key={nanoid()} color={color} />;
+      })}
+    </div>
+  );
 };
 export default ColorList;
