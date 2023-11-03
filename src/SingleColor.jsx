@@ -1,3 +1,5 @@
+import { toast } from 'react-toastify';
+
 const SingleColor = ({ color, index }) => {
   const { hex, weight } = color;
 
@@ -5,9 +7,10 @@ const SingleColor = ({ color, index }) => {
     if (navigator.clipboard) {
       try {
         await navigator.clipboard.writeText(`#${hex}`);
-      } catch (error) {
-        console.log(error);
-      }
+        toast.success('color added to clipboard');
+      } catch (error) {}
+    } else {
+      toast.error('clipboard not available');
     }
   };
 
