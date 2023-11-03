@@ -1,8 +1,13 @@
+import { useState } from 'react';
+import Form from './Form';
+
 function App() {
+  const [getColor, setGetColor] = useState('');
+
   return (
-    <>
-      <h1>t</h1>
-    </>
+    <main>
+      <Form setGetColor={setGetColor} />
+    </main>
   );
 }
 
