@@ -24,6 +24,7 @@ const Form = ({ setGetColor }) => {
       <button type="submit" style={{ background: color }}>
         Generate
       </button>
+      <p>click color below to copy to clipboard</p>
     </form>
   );
 };

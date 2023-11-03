@@ -86,3 +86,18 @@ button {
 .white-font {
     color: white;
 }
+
+.single-color {
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+.single-color h4 {
+    margin-bottom: 1rem;
+}
+
+p {
+    font-style: italic;
+    font-size: smaller;
+    color: rgb(184, 181, 181);
+}
